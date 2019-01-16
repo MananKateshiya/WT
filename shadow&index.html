@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <title>Shadow & Index</title>
+    <style>
+    
+    .image{
+        
+        width: 520px;
+        height: 380px;
+        position: absolute;
+    }  
+    .image img{
+        
+        width: 520px;
+        height: 380px;
+        position: absolute;
+        z-index: -1;
+    }
+    .text{
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 34px;        
+        padding: 10 0 0 20;
+        text-shadow: 4px 4px black;    
+    }
+    
+    .image:hover{
+    box-shadow:6px 5px 8px 5px rgb(0, 0,0, 0.6);
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="image">
+        <img src="IMG/beach.jpg" alt="#">
+    </div>
+        
+    <div class="text">
+        <span>Hello</span>
+        <hr size="3" align="left" width="495" color="red">
+    </div>
+    
+</body>
+</html>

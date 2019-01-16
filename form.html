@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+table{
+    background-color: rgb(218, 163, 91);
+}
+
+.text{
+    color: rgb(15, 15, 158);
+    border-radius: 10px;
+    height: 30px;
+    width: 250px; 
+}
+
+h1{
+    color: white;
+    text-decoration: beige;
+}
+
+label{
+    font-size: 20px;
+}
+button{
+    height: 40px;
+    width: 150px;
+}
+</style>
+<title>Form</title>
+</head>
+
+<body bgcolor="lightblue">
+
+    <center>
+<table cellpadding="8" cellspacing="10">
+    
+    <h1>Registration Form</h1><br>
+
+    <form  name="form" onsubmit="check()">
+        <tr>
+        <td><label> Name:</td></label>
+        <td><input class="text" type="text" name="name"></td>
+        
+    </tr>
+    <tr>
+         <td>
+        <label>Address:</label>
+        <td><textarea class="text"name="address" id="" cols="30" rows="5"></textarea>  </td>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <label >Mother Name:</label>
+        </td>
+        <td>
+            <input class="text" type="text" name="fname">
+        </td>
+    </tr>
+
+    <tr>
+            <td>
+                <label >Father Name:</label>
+            </td>
+            <td>
+                <input class="text" type="text" name="mname">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Gender:</label>
+            </td>
+            <td>
+                <input type="radio" name="gen">Male
+            </td>
+            <td>
+                <input type="radio" name="gen">Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Branch</label>
+            </td>
+            <td>
+                <input class="text" type="text" name="branch">
+            </td>
+        </tr>
+
+
+        <tr>
+                <td>
+                    <label>Birthdate</label>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+
+            
+        <tr>
+                <td>
+                    <label>CC Name:</label>
+                </td>
+                <td>
+                    <input class="text" type="text">
+                </td>
+            </tr>
+
+            
+        <tr>
+                <td>
+                    <label>Mentor Name:</label>
+                </td>
+                <td>
+                    <input class="text" type="text">
+                </td>
+            </tr>
+
+            
+        <tr>
+                <td>
+                    <label>Subject:</label>
+                </td>
+                <td>
+                    <input type="checkbox">WT
+                    <input type="checkbox">SE
+                    <input type="checkbox">CO
+                    <input type="checkbox">OS
+                    <input type="checkbox">JAVA
+                </td>
+                
+            </tr>
+
+            <tr>
+                    <td>
+                        <label>Current Backlog</label>
+                    </td>
+                    <td>
+                        <input class="text" type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                        <td>
+                            <label>Future goal:</label>
+                        </td>
+                        <td>
+                            <select name="data">
+                                <option value="Startup">Startup</option>
+                                <option value="Study">Study</option>
+                                <option value="Job">Job</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button type="reset">Reset</button>
+                        </td>
+                        <td>
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+    </form>
+</table>
+</center>
+<script>
+    
+function check(){
+    var x = document.forms["form"]["name"].value;
+    if(x == "" || x==" "){
+        alert("Enter name");
+        reset();
+    }
+}
+
+function ok(){
+    alert("You have registered successfully!");
+}
+</script>
+
+</body>
+</html>

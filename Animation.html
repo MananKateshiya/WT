@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+
+       .block{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+        animation-name: block;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+       } 
+
+       .block2{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+        animation-name: block;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+       } 
+
+       .block3{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+        animation-name: block;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+       } 
+
+@-webkit-keyframes block{
+    
+ from { left:0px; top:25px; transform: rotate(360deg);}
+ to  { left:800px; top:25px; width: 400px;height: 200px;}
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="block"></div>
+    <div class="block2"></div>
+    <div class="block3"></div>
+    
+    
+</body>
+</html>

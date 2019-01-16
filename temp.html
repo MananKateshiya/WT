@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Random</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+.main{
+    margin-top: 80px;
+    margin-left: 50px;
+}
+        .main span{
+            padding: 30px;
+            font-size: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 8px solid black;
+            
+        }
+
+    </style>
+    </head>
+    <body id="color">
+        <div class="main">
+    <span id="demo"></span>
+
+</div>
+
+    <script>
+   
+   function rand(){
+    var arr = ["blue", "red", "green", "gold", "white", "orange", "yellow"];
+    var index = Math.round(Math.random()*8);
+    
+       var r = Math.round(Math.random()*9);
+       document.getElementById("demo").style.color = arr[index];
+       document.getElementById("demo").innerHTML = r;
+   }
+       setInterval(rand, 1000);
+
+       function color(){
+       var arr = ["blue", "red", "green", "gold", "white", "orange", "yellow"];
+       var index = Math.round(Math.random()*8);
+       document.getElementById("color").style.backgroundColor = arr[index];
+       }
+
+       setInterval(color, 1000);
+    </script>
+</body>
+</html>

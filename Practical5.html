@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    
+    <title>Practical5</title>
+    
+    <script>
+            function pop1(){
+                alert("Page is loaded!!");
+            }
+    
+            function pop2(){
+                
+                var a = prompt("Enter answer!");
+                if(a == 5){
+                    document.getElementById("x").value = "Correct";
+                }else{
+                    document.getElementById("x").value = "Incorrect";
+                }
+                
+            }
+    
+            function pop(){
+                confirm("Finish");
+            }
+        </script>
+</head>
+
+<body onload="pop1()">
+
+
+<h1>2+3=?</h1>
+<input type="button" value="Check" onclick="pop2()"><br><br>
+<input type="text" id="x" value="Answer" onmouseover="pop()"></input>
+</body>
+</html>
