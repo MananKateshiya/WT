@@ -1,0 +1,352 @@
+body{
+    margin: 0px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    
+}
+
+.head{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(30, 69, 87);
+}
+
+.head-img{
+    margin: 0;
+    padding: 10 0 10 200;
+    position: absolute;
+}
+
+.head input{
+    width: 200px;
+    height: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 12px;
+    
+}
+
+.head-input{
+    padding: 12 0 10 700;
+    position: absolute;
+    z-index: 1;
+}
+
+.head-btn{
+    padding: 10 0 10 1120;
+    position: absolute;
+
+}
+.head-btn input{
+    border:  solid white;
+    border-width: 1.5;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    width: 85px;
+    height:31px;
+    background-color: transparent;
+}
+
+
+.head-btn input:hover{
+    background-color: white;
+    color:  rgb(30, 69, 87);
+}
+
+
+.head-forpw{
+    padding: 18  0 10 1220;
+}
+.head-forpw a{
+    color: rgb(228, 228, 228);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.head-forpw a:hover{
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.main{
+    margin-top: 30px;
+    width: 400px;
+    height:480px;
+    border-radius: 4px;
+    background-color: #edf0f3;
+    
+}
+
+.submain{
+    width: 400px;
+    height: 110;
+    border-radius: 4px;
+    background-color: #f6f8fa;
+}
+
+.submain .title{
+    padding-top: 16px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submain .subtitle{
+    font-weight: 400;
+    padding: 0 8 16 8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main input{
+    margin: 5px;
+    width: 352px;
+    height: 32px;
+}
+
+.main label{
+    
+    padding-right: 285px;  
+}
+
+.form{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.terms{
+    font-weight: 200;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgba(0,0,0,0.6);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginbtn button{
+    width: 330px;
+    height: 32px;
+    background-color: #0073b1;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer{
+    margin-top: 25px;
+    height: 324px;
+    width: 100%;
+    position: absolute;
+    background-color: #434649;
+
+}
+.footform{
+    position: relative;
+}
+
+.footform label{
+    position: absolute;
+    padding-left: 430px;
+    margin-top: 10px;
+    color: rgb(255,255,255,0.8);
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+.footform input{
+    position: absolute;
+    height: 32px;
+    width: 232px;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+.footform button{
+    position: absolute;
+    margin-left: 1030px;
+    width: 80px;
+    height: 32px;
+    background: none;
+    border: solid grey 1px;
+    border-radius: 3px;
+    font-size: 16px;
+    color:  rgb(255,255,255,0.4);
+}
+.pageseek{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 400px;
+}
+.pageseek span{
+    color: rgb(255,255,255,0.9);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;  
+    position: absolute;
+    width: 1000px;  
+}
+.seeks{
+    padding-top: 30px;
+    padding-left: 515px;
+}
+
+.seeks ul{
+    list-style: none;
+}
+.seeks li{
+    float: left;
+}
+.seeks a{
+    text-decoration: none;
+    color: rgb(255,255,255,0.9);
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;  
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+}
+.seeks a:hover{
+    text-decoration: underline;
+    color: rgb(255,255,255);
+}
+
+.seeksub{
+    position: relative;
+}
+.seeksub a{
+        color: rgb(255,255,255,0.9);
+        font-size: 12px;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-top: 35px;
+    }
+
+.seeksub a:hover{
+        color: white;
+        font-weight: 600;
+        font-size: 13px;
+        text-decoration: underline;
+    }
+
+    .hr1 hr{
+        margin-top: 30px;
+        width: 1100px;
+        background-color: rgb(255,255,255,0.5);
+    }
+
+    .footlink{
+        position: absolute;
+        color: rgb(255,255,255,0.9); 
+        margin-left: 200px;
+        
+    }
+    .footlink a{
+        color: rgb(255,255,255,0.9);
+        font-size: 14px;
+        text-decoration: none;
+        padding-top: 35px;
+        font-weight: 400;
+        padding-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    .footlink a:hover{
+        text-decoration: underline;
+    }
+    .footlink2{
+        position: absolute;
+        color: rgb(255,255,255,0.9); 
+        margin-left: 800px;
+    }
+    .footlink2 a{
+        color: rgb(255,255,255,0.9);
+        font-size: 14px;
+        text-decoration: none;
+        padding-top: 35px;
+        font-weight: 400;
+        padding-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    
+    .footlink2 a:hover{
+        text-decoration: underline;
+    }
+    .footlink3{
+        position: absolute;
+        color: rgb(255,255,255,0.9); 
+        margin-left: 200px;
+        margin-top: 90px;
+    }
+    .footlink3 a{
+        color: rgb(255,255,255,0.9);
+        font-size: 14px;
+        text-decoration: none;
+        padding-top: 35px;
+        font-weight: 400;
+        padding-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    .footlink3 a:hover{
+        text-decoration: underline;
+    }
+    .footlink4{
+        position: absolute;
+        color: rgb(255,255,255,0.9); 
+        margin-left: 800px;
+        margin-top: 90px;
+    }
+    .footlink4 a{
+        color: rgb(255,255,255,0.9);
+        font-size: 14px;
+        text-decoration: none;
+        padding-top: 35px;
+        font-weight: 400;
+        padding-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    .footlink4 a:hover{
+        text-decoration: underline;
+    }
+
+    .hr2 hr{
+        margin-top: 170px;
+        width: 1100px;
+        background-color: rgb(255,255,255,0.5);
+    }
+
+    .finalfoot{
+        margin-top: 20px;
+        margin-left: 200px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        color: white;
+    }
+
+    .finalfoot a{
+        color: rgb(255,255,255,0.9);
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 600;
+        padding-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .finalfoot a:hover{
+        text-decoration: underline;
+    }

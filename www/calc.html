@@ -1,0 +1,169 @@
+<html>
+<head>
+
+	<title>Calc</title>
+	<style>
+		.back{
+			background-color: rgb(88, 69, 211);
+			width: 350px;
+			height: 350px;
+			box-shadow: 0px 0px 3px 8px red;
+			margin: 20px;
+
+		}
+		.screen input{
+			width: 330px;
+			height: 50px;
+			border-radius: 5px;
+			margin-top: 10px;
+			margin-left: 10px;
+			color: black;
+			font-size: 20px;
+			padding-left: 10px;
+		}
+
+		.keys button{
+			border: 1px solid;
+			margin-top: 10px;
+			margin-left: 10px;
+			width: 60px;
+			height: 40px;
+			background-color: rgb(198, 198, 37);
+			border-radius: 5px;
+			font-size: 18px;
+			font-weight: 600;
+		}
+
+		button:hover{
+			background-color: white;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<div class="back">
+		<div class="screen">
+			<input id="text" type="text" name="screen">
+		</div>
+		<div class="keys">
+			<table name="calc">
+				<tr>
+					<td><button id="b1" value="1" onclick="one()">1</button></td>
+					<td><button id="b2" value="2" onclick="two()">2</button></td>
+					<td><button id="b3" value="3" onclick="three()">3</button></td>
+					<td><button id="add" value="+" onclick="add()">+</button></td>
+				</tr>
+
+				<tr>
+					<td><button id="b4" value="4" onclick="four()">4</button></td>
+					<td><button id="b5" value="5" onclick="five()">5</button></td>
+					<td><button id="b6" value="6" onclick="six()">6</button></td>
+					<td><button id="sub" value="-" onclick="sub()">-</button></td>
+				</tr>
+
+				<tr>
+					<td><button id="b7" value="7" onclick="seven()">7</button></td>
+					<td><button id="b8" value="8" onclick="eight()">8</button></td>
+					<td><button id="b9" value="9" onclick="nine()">9</button></td>
+					<td><button id="mul" value="*" onclick="mul()">*</button></td>
+				</tr>
+				
+				<tr>
+					<td colspan="3"><button id="b0" value="0" onclick="zero()" style="width: 210px;">0</button></td>
+					<td><button id="div" value="/" onclick="div()">/</button></td>
+				</tr>
+
+				<tr>
+					<td colspan="5"><button id="eq" value="=" onclick="ans()" style="width: 96%">=</button></td>	
+				</tr>
+
+			</table>
+		</div>
+	</div>
+
+
+<script>
+	function one(){
+		var x =document.getElementById("b1").value;
+		document.getElementById("text").value += x;
+	}
+
+	function two(){
+		var x =document.getElementById("b2").value;
+		document.getElementById("text").value += x;
+	}
+
+
+	function three(){
+		var x =document.getElementById("b3").value;
+		document.getElementById("text").value += x;
+	}
+
+
+	function four(){
+		var x =document.getElementById("b4").value;
+		document.getElementById("text").value += x;
+	}
+
+
+	function five(){
+		var x =document.getElementById("b5").value;
+		document.getElementById("text").value += x;
+	}
+
+
+	function six(){
+		var x =document.getElementById("b6").value;
+		document.getElementById("text").value += x;
+	}
+
+
+	function seven(){
+		var x =document.getElementById("b7").value;
+		document.getElementById("text").value += x;
+	}
+
+	function eight(){
+		var x =document.getElementById("b8").value;
+		document.getElementById("text").value += x;
+	}
+
+function nine(){
+		var x =document.getElementById("b9").value;
+		document.getElementById("text").value += x;
+	}
+
+	function zero(){
+		var x =document.getElementById("b0").value;
+		document.getElementById("text").value += x;
+	}
+
+	function add(){
+		var x =document.getElementById("add").value;
+		document.getElementById("text").value += x;	
+	}
+
+	function mul(){
+		var x =document.getElementById("mul").value;
+		document.getElementById("text").value += x;	
+	}
+
+	function div(){
+		var x =document.getElementById("div").value;
+		document.getElementById("text").value += x;	
+	}
+
+	function sub(){
+		var x =document.getElementById("sub").value;
+		document.getElementById("text").value += x;	
+	}
+	function ans(){
+		var y = eval(document.getElementById("text").value);
+		document.getElementById("text").value = y;
+	}
+</script>
+
+</body>
+</html>

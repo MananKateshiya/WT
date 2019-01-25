@@ -1,0 +1,166 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Prac4</title>
+		<style>
+		body{
+			background-color: rgba(4,39,56);
+			color: white;
+			background-image: url("IMG/frostroad.jpg");
+			background-repeat: no-repeat;
+		}
+
+		table{
+		background-color: rgba(0,0,0,0.9);
+		border-radius: 10px;
+		}
+
+		.text{
+		color: white;
+		height: 50px;
+		width: 350px;
+		font-size: 26px;
+		background-color: transparent;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		outline: none;
+		}
+
+		.text:hover{
+			border-bottom: 3px solid red;
+
+		}
+	
+		h1{
+		color: white;
+		background-color: rgba(0,0,0,0.8);
+		display: inline-block;
+		padding: 20px;
+		border-radius: 20px;
+		text-decoration: beige;
+		}
+
+		label{
+		font-size: 24px;
+		font-family: sans-serif;
+		font-weight: 300;
+		}
+
+		button{
+		height: 40px;
+		width: 150px;
+		outline: none;
+		font-size: 24px;
+		border: none;
+		}
+		p{
+			font-size: 20px;
+			color: red;
+			text-decoration: bold;
+		}
+		
+		</style>
+		
+		<script type="text/javascript">
+		function check(){
+
+
+			var uname = document.getElementById('uname').value;
+			var pw = document.getElementById('pw').value;
+			var cpw = document.getElementById('cpw').value;
+
+			if(uname == "" || uname==" "){
+
+				document.getElementById('pname').innerHTML = "Enter Name";
+				return false;
+			}
+			if(pw == "" || pw == " "){
+				document.getElementById('ppw').innerHTML = "Enter Password";
+				return false;
+			}
+			if (pw.length < 6) {
+				document.getElementById('ppw').innerHTML = "Minimum length is 6";
+				return false;
+			}
+			if(pw != cpw){
+				document.getElementById('pcpw').innerHTML = "Please Enter Correct Password";
+				return false;
+			}
+		}
+	</script>
+
+
+</head>
+<body>
+	
+		<center>
+		<table cellpadding="8" cellspacing="10">
+			
+			<h1>Registration Form</h1><br>
+			<form  name="form"  onsubmit="return check()" method="get" action="#">
+				<tr>
+					<td><label> Name:</td></label>
+					<td><input class="text" id="uname" type="text" name="uname" placeholder="Enter Name..." autocomplete="off"></td>
+				</tr>
+				<tr>
+					<td><p id="pname"></p></td>
+				</tr>	
+				<tr>
+					<td>
+						<label >Password:</label>
+					</td>
+					<td>
+						<input class="text" id="pw" type="Password" name="pw" autocomplete="off" placeholder="Enter Password...">
+					</td>
+				</tr>
+				<tr>
+					<td><p id="ppw"></p></td>
+				</tr>	
+				<tr>
+					<td>
+						<label >Confirm Password:</label>
+					</td>
+					<td>
+						<input class="text" id="cpw" type="Password" name="cpw" autocomplete="off" placeholder="Re-enter Password...">
+					</td>
+				</tr>
+				<tr>
+					<td><p id="pcpw"></p></td>
+				</tr>	
+				<tr>
+					<td>
+						<label >Mobile Number:</label>
+					</td>
+					<td>
+						<input class="text" type="number" name="mo" autocomplete="off" placeholder="Enter Mobile number..."> 
+					</td>
+				</tr>
+				<tr>
+					<td><p id="pmo"></p></td>
+				</tr>	
+				<tr>
+					<td>
+						<label >E-mail:</label>
+					</td>
+					<td>
+						<input class="text" type="text" name="mail" autocomplete="off" placeholder="Enter e-mail address...">
+					</td>
+				</tr>
+				<tr>
+					<td><p id="pmail"></p></td>
+				</tr>
+
+				<tr>	
+					<td></td>
+					<td>
+						<button type="reset">Reset</button>
+						<button type="submit">Submit</button>
+					</td>
+				</tr>
+			</form>
+
+
+		</body>
+	</html>

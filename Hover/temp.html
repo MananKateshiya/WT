@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+		
+button{
+  display: inline-block;
+  position: relative;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px 30px;
+  background-image: url(5.jpg);
+  height: 320px;
+  width: 320px;
+}
+span{
+  font-family: "Cinzel Decorative";
+  display: block;
+  padding: 25px 80px;
+}
+button::before, button::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+
+}
+
+span::before, span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+button:hover::before, button:hover::after{
+  width: 90%;
+}
+button:hover span::before, button:hover span::after{
+  height: 90%;
+}
+button:hover{
+	background-size: 105%;
+}
+
+/*----- button 6 -----*/
+.btn-6::before{
+  left: 50%;
+  top: 5%;
+  transition-duration: 0.4s;
+}
+.btn-6::after{
+  left: 50%;
+  bottom: 5%;
+  transition-duration: 0.4s;
+}
+.btn-6 span::before{
+  left: 5%;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn-6 span::after{
+  right: 5%;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn-6:hover::before, .btn-6:hover::after{
+  left: 5%;
+  
+}
+.btn-6:hover span::before, .btn-6:hover span::after{
+  top: 5%;
+}
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel Decorative Regular'), local('CinzelDecorative-Regular'), url(https://fonts.gstatic.com/s/cinzeldecorative/v6/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2) format('woff2');
+  
+}
+	</style>
+
+</head>
+
+<body>
+<div class="container">
+  <button class="btn-6"><span><img src="spa2.png"><br>SPA</span></button>
+</div>
+</body>
+</html>

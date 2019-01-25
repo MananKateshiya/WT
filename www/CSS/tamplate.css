@@ -1,0 +1,48 @@
+
+body{
+
+    background-image: url('IMG/for.jpg');
+    background-repeat:no-repeat;
+    background-width:1000px;
+    
+    }
+    
+    .logo{
+    
+    color:white;
+    font-family: arial;
+    font-size:22px;
+    margin-left: 10px;
+    
+    }
+    
+    
+    .main{
+    
+    color:white;
+    margin-top:250px;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif
+    text-decoration:none;
+    text-align:center;
+    
+    }
+    
+    .footer span a{
+    
+    color:white;
+    font-family:Lucida Console", Monaco, monospace;
+    text-decoration:none;
+    }
+    
+    .footer span{
+    color:white;
+    font-size:16px;
+    margin-top: 500px;
+    }
+    
+    .footer{
+    
+    margin-top:230px;
+    
+    }
