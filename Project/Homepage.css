@@ -1,19 +1,19 @@
-body{   
+body{
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
   overflow-x: hidden;
   overflow-y: scroll;
- } 
+ }
  header{
   height: 150px;
-  margin-top: 0px; 
-  width: 100%;  
+  margin-top: 0px;
+  width: 100%;
   background: white;
-  top : 0px; 
+  top : 0px;
   position: sticky;
   z-index: 1;
- } 
+ }
 header img{
   height: 90px;
   width: 270px;
@@ -177,7 +177,7 @@ body {
   font-style: normal;
   font-weight: 400;
   src: local('Cinzel Decorative Regular'), local('CinzelDecorative-Regular'), url(https://fonts.gstatic.com/s/cinzeldecorative/v6/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2) format('woff2');
-  
+
 }
 
 .content{
@@ -330,8 +330,8 @@ body {
   position: absolute;
   margin-left: 580px;
   margin-top: 105px;
-  
-} 
+
+}
 
 .footheading span{
   margin-left: 200px;
@@ -499,7 +499,7 @@ body {
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
   margin-top: 550px;
-  margin-left: 1200px; 
+  margin-left: 1200px;
 }
 .lastlinks a{
   text-decoration: none;
@@ -507,7 +507,7 @@ body {
   color: rgba(202,202,202,0.3);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  
+
 }
 .lastlinks a:hover{
   color: #b0914f;
@@ -534,4 +534,26 @@ body {
 
 #Btn:hover {
   background-color: #aeaeae;
+}
+
+/*DATE--------------------------------*/
+
+
+
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+
+input[type="date"]::-webkit-inner-spin-button{
+    display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
 }
