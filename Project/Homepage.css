@@ -2,22 +2,22 @@ html{
   scroll-behavior: smooth;
 }
 
-body{   
+body{
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
   overflow-x: hidden;
   overflow-y: scroll;
- } 
+ }
  header{
   height: 150px;
-  margin-top: 0px; 
-  width: 100%;  
+  margin-top: 0px;
+  width: 100%;
   background: white;
-  top : 0px; 
+  top : 0px;
   position: sticky;
   z-index: 1;
- } 
+ }
 header img{
   height: 90px;
   width: 270px;
@@ -33,7 +33,7 @@ header img{
 	margin-left: 700px;
 }
 .headlinks{
-  margin-left: 20px;
+  margin-left: 15px;
 }
 li{
 	list-style-type: none;
@@ -163,7 +163,7 @@ body {
   padding-right: 5px;
   font-family: "Cinzel Decorative";
   border : none;
-   outline: none; 
+   outline: none;
 }
 .Date:hover{
   outline: none;
@@ -171,7 +171,7 @@ body {
 }
 .hpbooksel:hover{
  outline: none;
-  color: #b0914f; 
+  color: #b0914f;
 }
 .hpbooksel{
   width: 180px;
@@ -185,14 +185,14 @@ body {
 }
 option{
   color: black;
-  
+
 }
 @font-face {
   font-family: 'Cinzel Decorative';
   font-style: normal;
   font-weight: 400;
   src: local('Cinzel Decorative Regular'), local('CinzelDecorative-Regular'), url(https://fonts.gstatic.com/s/cinzeldecorative/v6/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2) format('woff2');
-  
+
 }
 
 .content{
@@ -345,8 +345,8 @@ option{
   position: absolute;
   margin-left: 580px;
   margin-top: 105px;
-  
-} 
+
+}
 
 .footheading span{
   margin-left: 200px;
@@ -471,7 +471,7 @@ option{
   width: 50px;
   height: auto;
   transition: 0.5s;
-  border-radius: 50%;                   
+  border-radius: 50%;
   background-color: white;
 }
 .twitter:hover{
@@ -535,7 +535,7 @@ option{
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
   margin-top: 550px;
-  margin-left: 1200px; 
+  margin-left: 1200px;
 }
 .lastlinks a{
   text-decoration: none;
@@ -543,7 +543,7 @@ option{
   color: rgba(202,202,202,0.3);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  
+
 }
 .lastlinks a:hover{
   color: #b0914f;
@@ -578,14 +578,14 @@ input[type="date"]::-webkit-clear-button{
 }
 
 /* Removes the spin button */
-input[type="date"]::-webkit-inner-spin-button { 
+input[type="date"]::-webkit-inner-spin-button {
     display: none;
 }
 
 /* Always display the drop down caret */
 input[type="date"]::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
-    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;   
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
 }
 [type="date"] {
   background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
