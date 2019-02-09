@@ -31,18 +31,82 @@ body{
   color: white;
 }
 
+.mainpart{
+  height: 1300px;
+}
 .about-main{
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .about-main img{
   margin-left: 300px;
+  position: absolute;
 }
 
+.title1{
+  color: #b0914f;
+  font-family: 'Cinzel Decorative';
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 850px;
+}
+.title2{
+  color: rgb(0, 0, 90, 0.8);
+  font-family: 'Cinzel Decorative';
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 850px;
+}
+.about-main hr{
+  width: 90px;
+  size: 40px;
 
+}
+
+.para{
+  margin-left: 850px;
+  margin-right: 200px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 2.14;
+  color: #7b7b7b;
+}
 
 @font-face {
   font-family: 'Cinzel Decorative';
   font-style: normal;
   font-weight: 400;
   src: local('Cinzel Decorative Regular'), local('CinzelDecorative-Regular'), url(https://fonts.gstatic.com/s/cinzeldecorative/v6/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2) format('woff2');
+}
+
+
+.follow img{
+  position: absolute;
+  margin-top: 223px;
+  
+}
+.follow{
+  margin-left: 690px;
+  position: absolute;
+}
+
+.parallex{  
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  background-image: url("Images/About/swimming_pool.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -100px;
+
+}
+.parallex span{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  text-shadow: 5px 5px 3px black;
+}
+.parallex img{
+  position: absolute;
 }
